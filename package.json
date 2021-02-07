@@ -1,0 +1,29 @@
+{
+  "name": "code-fellows",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run client\" \"nodemon index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prabin544/code-fellows.git"
+  },
+  "author": "Prabin singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prabin544/code-fellows/issues"
+  },
+  "homepage": "https://github.com/prabin544/code-fellows#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
