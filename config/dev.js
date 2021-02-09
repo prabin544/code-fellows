@@ -1,6 +1,6 @@
 module.exports={
-    googleClientID:"865591724824-9b5q7vtk8bmpbc60a6029dc8fiod6jor.apps.googleusercontent.com",
-    googleClientSecret:"keOVWk0tgupp0rlI3JFIK6Na",
+    googleClientID:"959786186943-o3s6ehvufv1vnic1f0l7g4vsc6h0ngq0.apps.googleusercontent.com",
+    googleClientSecret:"kWbfvSjtUC9Sq0rRvQf3lFEn",
     mongoURI:"mongodb+srv://prabin544:PKEubmQBW99h9ueh@cluster0.nqbju.mongodb.net/news?retryWrites=true&w=majority",
-    cookieKey:'sdfsdfffvdfvfa'
+    cookieKey:'scnocsnfewufcnkwsjhds'
 }
