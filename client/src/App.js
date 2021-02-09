@@ -13,7 +13,10 @@ function App(props) {
   return (
     <Router>
       <NavbarPage />
+      <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/profile" component={Profile} />
+      </Switch>
     </Router>
   );
 }
