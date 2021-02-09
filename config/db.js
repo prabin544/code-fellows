@@ -2,7 +2,6 @@ const mongoose = require ('mongoose');
 const keys = require('../config/keys');
 
 const connectDB = async () => {
-    console.log(keys.mongoURI)
     try {
         const conn = await mongoose.connect(keys.mongoURI, {
             useNewUrlParser: true,
