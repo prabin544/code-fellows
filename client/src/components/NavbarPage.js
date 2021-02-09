@@ -10,7 +10,7 @@ const NavbarPage = (props) => {
       case null:
         return <Nav.Link href="/">Loading</Nav.Link>
       case false:
-        return <Nav.Link href="/auth/google">SignUp</Nav.Link>
+        return <Nav.Link href="/auth/google">SignIn</Nav.Link>
       default:
         return(
           <React.Fragment>
