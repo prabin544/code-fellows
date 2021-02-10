@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Card, CardDeck } from 'react-bootstrap';
-import './CardPage.css';
 import { FaSave } from "react-icons/fa";
+import './CardPage.css'
 
 function CardPage (props) {
     console.log(props)
@@ -15,8 +15,8 @@ function CardPage (props) {
                     <Card.Text>
                     {props.abstract}
                     </Card.Text>
-                    <Button type="url" variant="info" href={props.url}>View</Button>
                 </Card.Body>
+                <Button type="url" variant="info" href={props.url}>View</Button>
             </Card>
         </div>
     );
