@@ -29,5 +29,9 @@
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0",
     "react-bootstrap": "^1.4.3"
+  },
+  "devDependencies": {
+    "@iconify-icons/emojione": "^1.1.0",
+    "@iconify/react": "^1.1.4"
   }
 }
