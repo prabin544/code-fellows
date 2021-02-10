@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, PureComponent } from "react";
+import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Container, Row, Col, Card, ListGroup, ListGroupItem } from 'react-bootstrap'
 
 
 const Profilepage = (props) => {
-  console.log("props",props)
-
-  if(!props.user){
-    props.history.push('/')
-  }
-
+  console.log(props)
   const [userdata,setUserData] = useState({
     name:"loading",
-    picture:""
+    picture:"",
+    email:""
   })
 
   useEffect(()=>{
@@ -21,11 +18,10 @@ const Profilepage = (props) => {
       setUserData({
         name:props.user.username,
         picture:props.user.picture,
-        email:props.user.email
+        email:props.user.email 
       })
     }
-    
-  },[])
+  },[props.user])
     
   return(
     <Container>
@@ -39,10 +35,10 @@ const Profilepage = (props) => {
           <ListGroup className="list-group-flush">
             <ListGroupItem>{userdata.email}</ListGroupItem>
           </ListGroup>
-          <Card.Body>
+          {/* <Card.Body>
             <Card.Link href="#">Card Link</Card.Link>
             <Card.Link href="#">Another Link</Card.Link>
-          </Card.Body>
+          </Card.Body> */}
         </Card>
       </Col>
     </Row>
