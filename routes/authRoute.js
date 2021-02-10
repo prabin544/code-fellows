@@ -7,7 +7,7 @@ module.exports = (app)=>{
 }))
 
 app.get("/auth/google/callback",passport.authenticate('google'),(req,res)=>{
-    res.redirect('/profile')
+    res.redirect('/news')
 })
 app.get('/api/current_user',(req,res)=>{
     res.send(req.user)

@@ -1,0 +1,34 @@
+.full-bg-size { 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .bg-dim {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+  .portfolio{
+    margin-top: 5%;
+    width: 70%;
+}
+h4{
+    padding-top: 75px;
+    font-family: 'Pacifico', cursive;
+}
+p{
+    font-family: 'Dancing Script', cursive;
+    font-size: x-large;
+    color: azure;
+
+}
+.profileCard{
+    padding-top: 30px;
+}
+h3{
+    padding-top: 20px;
+}

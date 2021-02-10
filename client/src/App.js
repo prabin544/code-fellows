@@ -6,6 +6,7 @@ import {  BrowserRouter as Router, Route } from "react-router-dom";
 import {connect} from 'react-redux';
 import {fetchUserAction} from './actions/myaction'
 import TrendingNews from './components/TrendingNews';
+import Contact from './components/Contact';
 
 function App(props) {
   useEffect(()=>{
@@ -17,6 +18,7 @@ function App(props) {
         <Route exact path="/" component={Home} />
         <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/news" component={TrendingNews} />
+        <Route exact path="/contact" component={Contact} />
     </Router>
   );
 }
