@@ -1,10 +1,11 @@
 import React,{useEffect} from 'react';
 import NavbarPage from './components/NavbarPage';
 import Home from './components/Home';
-import Profile from './components/Profile';
+import ProfilePage from './components/ProfilePage'
 import {  BrowserRouter as Router, Route } from "react-router-dom";
 import {connect} from 'react-redux';
 import {fetchUserAction} from './actions/myaction'
+import TrendingNews from './components/TrendingNews';
 
 function App(props) {
   useEffect(()=>{
@@ -14,7 +15,8 @@ function App(props) {
     <Router>
       <NavbarPage />
         <Route exact path="/" component={Home} />
-        <Route exact path="/profile" component={Profile} />
+        <Route exact path="/profile" component={ProfilePage} />
+        <Route exact path="/news" component={TrendingNews} />
     </Router>
   );
 }
