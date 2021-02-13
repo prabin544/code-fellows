@@ -19,7 +19,7 @@ const Home = () => {
         <div className="bg-dim full-bg-size" style={{backgroundImage: `url(${image})`}} />
         <Container className="portfolio">
             <Row>
-                <Col md={{ span: 6, offset: 3 }}>
+                <Col>
                     <Row>
                         <h4>Hi'll {<Icon icon={wavingHand} />} !!!</h4>
                     </Row>
